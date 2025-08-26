@@ -45,9 +45,9 @@ This project analyzes flight data to build a predictive model that estimates tic
 
 The model shows signs of overfitting with high training R² (0.9816) compared to testing R² (0.9036). Future improvements could include:
 
-- Enhanced regularization parameters
-- Feature selection to reduce dimensionality
-- Ensemble methods with different model types
-- More sophisticated encoding for categorical variables
-- External data integration (holidays, weather, etc.)
-- Advanced cross-validation techniques
+- **Regularization**: Increase min_samples_leaf (5-10) and reduce max_depth in Random Forest
+- **Feature Selection**: Remove low-importance features (< 1%) based on the feature importance analysis
+- **Gradient Boosting**: Try XGBoost or LightGBM with early stopping to prevent overfitting
+- **Cross-validation**: Implement time-based splits for temporal flight data
+- **Ensemble Strategy**: Blend predictions from diverse models (RF, XGBoost, Linear models)
+- **Data Augmentation**: Generate synthetic samples for underrepresented price ranges
