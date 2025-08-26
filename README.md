@@ -4,7 +4,7 @@ Machine learning project to predict flight ticket prices based on various featur
 
 ## Overview
 
-This project analyzes flight data to build a predictive model that estimates ticket prices based on features like airline, date, route, duration, and stops.
+This project analyzes flight data to build a predictive model that estimates ticket prices based on features like airline, date, route, duration and stops. The project implements data preprocessing including feature engineering, categorical encoding and derived attribute extraction from temporal data. Two main regression models were developed and evaluated: **Linear Regression** and **Random Forest Regressor**. Through hyperparameter optimization, the Random Forest model achieved superior performance with 90.36% R² score on test data. The final model can capture complex price patterns and provides accurate predictions across different flight categories, with flight duration and airline being the most influential factors in price determination.
 
 ## Dataset
 
